@@ -1,0 +1,193 @@
+:root {
+  --primary-color: #055a05;
+  /* forest green */
+  --accent1-color: #265342;
+  /* dark green */
+  --heading-font: "Times New Roman", "Georgia", serif;
+  --body-font: Arial, Helvetica, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+}
+
+header {
+  width: 100%;
+  max-width: 840px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+main,
+footer {
+  width: 100%;
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+header > img {
+  width: 120px;
+}
+
+nav a {
+  color: var(--primary-color);
+}
+
+h1,
+h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+}
+
+.socialmedia a {
+  text-decoration: none;
+}
+
+/* Hero section */
+.hero {
+  position: relative;
+}
+
+.hero > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.85;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  width: 740px;
+  margin: 0;
+  padding: 16px;
+  background-color: white;
+  color: black;
+}
+
+.hero article img {
+  float: right;
+  width: 125px;
+  margin-left: 15px;
+  border: 3px solid white;
+}
+
+/* History and adventure sections */
+section {
+  text-align: center;
+}
+
+section h2 {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+
+}
+
+section p {
+  color: var(--primary-color);
+}
+
+.adventures {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  align-items: start;
+
+}
+
+.adventures h2 {
+  grid-column: 1/ -1;
+
+}
+
+.adventures figure {
+  margin: 0;
+}
+
+.adventures img {
+  width: 100%;
+  height: auto;
+  display: block;
+
+}
+
+.adventures figcaption {
+  text-align: center;
+  padding: 8px 0;
+}
+
+.history {
+  text-align: center;
+}
+
+.history-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.history-content p {
+  margin: 0;
+  padding: 10px;
+  text-align: left;
+}
+
+.history-content img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer p {
+  margin: 0;
+
+}
+
+.socialmedia {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.socialmedia img {
+  width: 32px;
+  height: 32px;
+}
