@@ -65,7 +65,6 @@ nav ul {
 /* Hero section */
 .hero {
   position: relative;
-
 }
 
 .hero > img {
@@ -130,7 +129,7 @@ section p {
 }
 
 .adventures h2 {
-  grid-column: 1 / -1;
+  grid-column: 1/ -1;
 
 }
 
@@ -175,19 +174,8 @@ section p {
 }
 
 /* Footer */
-
-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 0;
-
-}
-
 footer p {
   margin: 0;
-  flex: 1;
-  text-align: center;
 
 }
 
