@@ -1,0 +1,365 @@
+:root {
+    --primary-color: #055a05;
+    /* forest green */
+    --accent1-color: #265342;
+    /* dark green */
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+
+}
+
+header {
+    width: 100%;
+    max-width: 840px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+/*   HEADER   */
+
+header > img {
+    width: 120px;
+}
+
+/*  NAVIGATION  */
+
+nav a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+
+}
+
+/* MAIN AND FOOTER  */
+
+main,
+footer {
+    width: 100%;
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+/* HEADINGS */
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+/* HERO SECTION */
+
+.trips-hero {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+
+}
+
+.trips-hero > img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+
+    display: block;
+
+}
+
+/* Hero text */
+
+.trips-hero > div {
+    position: absolute;
+
+    bottom: 20px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 100%;
+
+    padding: 16px;
+
+    text-align: center;
+
+    background-color: rgba(0, 0, 0, 0.60);
+
+    color: white;
+}
+
+.trips-hero h1 {
+    color: white;
+
+    font-size: 2.8rem;
+
+    margin-bottom: 10px;
+}
+
+.trips-hero p {
+    color: white;
+
+    font-size: 1rem;
+}
+
+/* CALL TO ACTION */
+
+.trips-cta {
+    text-align: center;
+
+    padding: 30px 20px;
+
+    background-color: var(--primary-color);
+
+    color: white;
+
+    margin-bottom: 35px;
+}
+
+.trips-cta h2 {
+    color: white;
+
+    margin-bottom: 10px;
+}
+
+.trips-cta p {
+    color: white;
+
+    margin-bottom: 20px;
+}
+
+/* CTA BUTTON */
+
+.trips-cta a {
+    display: inline-block;
+
+    padding: 10px 20px;
+
+    background-color: var(--accent1-color);
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    border: 2px solid white;
+
+    border-radius: 4px;
+}
+
+.trips-cta a:hover {
+    background-color: white;
+
+    color: var(--primary-color);
+}
+
+/* TRIP LIST */
+
+.trip-list {
+    padding: 20px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    margin-bottom: 40px;
+}
+
+/* Individual trip */
+
+.trip {
+    border: 1px solid #ccc;
+
+    background-color: #f8f8f8;
+
+    border-radius: 5px;
+
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+}
+
+.trip:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+
+}
+
+/* Trip image */
+
+.trip > img {
+    width: 100%;
+
+    height: 180px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+/* Trip information */
+
+.trip > div {
+    padding: 15px;
+}
+
+.trip h2 {
+    background-color: var(--primary-color);
+
+    color: white;
+
+    padding: 10px;
+
+    margin-bottom: 12px;
+
+    font-size: 1.3rem;
+
+    text-align: center;
+}
+
+.trip p {
+    color: var(--accent1-color);
+
+    margin-bottom: 8px;
+}
+
+.trip strong {
+    color: var(--primary-color);
+}
+
+/* TRIPS TABLE */
+
+.trips-table {
+    padding: 20px;
+
+    margin-bottom: 40px;
+}
+
+.trips-table h2 {
+    background-color: var(--primary-color);
+
+    color: white;
+
+    padding: 12px;
+
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+/* Table */
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background-color: white;
+}
+
+thead {
+    background-color: var(--accent1-color);
+
+    color: white;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+
+    padding: 12px;
+
+    text-align: left;
+}
+
+th {
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #e8f0e8;
+}
+
+/* 
+   FOOTER */
+
+footer p {
+    margin: 0;
+    flex: 1;
+    text-align: center;
+}
+
+.footer-banner {
+    background-color: var(--primary-color);
+
+    color: white;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 15px;
+
+    margin-bottom: 20px;
+
+    font-weight: bold;
+}
+
+/*  SOCIAL MEDIA */
+
+.socialmedia {
+    display: flex;
+
+    margin: 0;
+
+    padding: 0;
+
+    gap: 15px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 30px;
+
+    height: 30px;
+
+    object-fit: contain;
+}
